@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+header{
+    background-color: rgb(40, 39, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    font-size: 16px;
+}
+
+header li{
+    display: inline-block;
+    margin: 15px;
+}
+header li a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: rgb(255, 253, 253);
+    font-size: 16px;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.logo a, a1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: rgb(243, 243, 243);
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo a1{
+    font-weight: 900;
+    color: aqua;
+}
+
+.logo a:hover{
+    text-shadow:0 0 7px aqua;
+}
+.nav_links{
+    list-style-type: none;
+}
+
+.nav_links li a:hover {
+    opacity: 1;
+    color: aqua;
+    border-bottom: .2px solid aqua;
+}
+
+/*body-part*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.hero{
+    font-family:'Poppins',sans-serif;
+    margin: auto;
+    padding: 150px 8%;
+    justify-content:space-between;
+}
+.hero span{
+    color: rgb(26, 181, 181);
+    opacity: 0.6;
+}
+.hero span:hover{
+    opacity: 1;
+}
+
+.hero p{
+    font-size: 16px;
+    font-weight: 500;
+    color:rgb(53, 53, 53);
+}
+
+.container p1{
+    margin-top: 10px;
+    max-width: 1000px;
+    display: inline-block;
+    color: rgb(74, 79, 79);
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+}
+.container img{  
+    flex-basis: 100%;
+}
+.container .btn{
+    list-style-type: none;
+    border: none;
+    text-decoration: none;
+}
+.btn{
+    display: inline-block;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 8px 35px;
+    margin:40px 0px;
+    margin-right: 50px;;
+    border-radius: 30px;
+    transition:background 0.9s;
+    justify-content:flex-start;
+}
+.btn:hover{
+    color: #ffffff;
+    background: rgb(34, 174, 174);
+}
+
+img{
+    width: 500px;
+    height: 500px;
+}
+.img-slider{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 800px;
+    height: 500px;
+    position:inherit;
+
+}
+.img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+.img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+    border-radius: 5px ;
+}
+.img-slider .slide .info{
+    position: absolute;
+    top: 0;
+    padding: 15px 30px;
+}
+.img-slider .slide .info h2{
+    color: rgb(77, 77, 77);
+    font-family:'Poppins', sans-serif ;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;;
+}
+
+.row{
+    display: flex;/*flexible content*/
+    align-items: center;
+    flex-wrap: wrap;/*wrap place single line or multi lines in given space.*/
+    justify-content: space-around;/*"Display the flex items with space before, between, and after the lines:"*/
+}
+.small-container{
+    max-width: 1080px; 
+    margin: auto;/*make images in center*/
+    padding-left: 25px;
+    padding-right: 25px;
+ }
+ /*col-4 will edit col of images*/
+ .col-4{
+    flex-basis: 25%;/*each image column occupies 25% each*/
+    padding: 10px;
+    min-width: 250px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;/*when apply hover effect it will move image with 5sec delay*/
+ }
+ .col-4 img{
+     width: 100%;
+     height: inherit;
+     display: flex;
+     justify-content: space-between;
+ }
+ /*for title class consist of heading of feature products*/
+ .title{
+    text-align: center; 
+    font-family:'poppins',sans-serif ;
+    margin: 40px auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: rgb(62, 62, 62);
+ }
+
+ .title::after{/*after is used to place something after anything*/
+     content:"";/*will place divider after title content*/
+     background: #31a7d9;/*color of divider*/
+     width: 80px;/*these all are the features of divider*/
+     height: 5px;
+     border-radius: 5px;
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%) ;
+ }
+ /*for products title*/
+  h4{
+    padding-top: 15px;
+     color:rgb(59, 59, 59);
+     font-family: 'Raleway',sans-serif;
+     font: weight 400px;;
+ }
+ 
+ /*for products price*/
+ .col-4 p{
+     font-size: 14px;
+ }
+ /*hover effect to feature products images*/
+ .col-4:hover{
+     transform: translateY(-5px);   
+ }
+ .col-4 p:hover{
+    color: rgb(34, 174, 174) ;
+ }
+ .col-4 h4:hover{
+    color: rgb(34, 174, 174) ;
+ }
+ .col-4 p a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+ }
+ .col-4 p a:hover{
+    color: white;
+ }
+
+
+
+ /*-----footer0---------*/
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;/*paragraphs color in class footer*/
+}
+.footer h3{
+    color: #fff;/*heading color is white*/
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;/*all columns should have a min width of 250px*/
+    margin-bottom:20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+    padding-left: 50px;
+}
+.footer-col-2{
+    flex: 1;/*flex 1 is used to fill complete occupy given space*/
+    text-align: center;
+}
+.footer-col-2 img{
+    max-width :240px;
+    max-height: 80px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex: basis 14%;/*both footer col3 and col4 occupies 12% each*/
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    display: block;
+    padding-left: 42%;
+    color: #fff;
+}
